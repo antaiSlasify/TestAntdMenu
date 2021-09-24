@@ -1,0 +1,120 @@
+@import "~antd/lib/style/themes/default.less";
+
+html,
+body,
+#root {
+  height: 100%;
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Roboto Regular', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', STXihei,
+    'Microsoft JhengHei', -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', Avenir, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Compatible with IE11 => AntDesign Pro原始的CSS
+========================================================================== */
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+Font
+========================================================================== */
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../assets/fonts/Roboto-Regular.ttf.woff') format('woff');
+  unicode-range: U+00-FF, U+980-9FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Roboto Bold';
+  src: url('../assets/fonts/Roboto-Bold.ttf.woff') format('woff');
+  unicode-range: U+00-FF, U+980-9FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../assets/fonts/Roboto-Light.ttf.woff') format('woff');
+  unicode-range: U+00-FF, U+980-9FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Nexa Bold';
+  src: url('../assets/fonts/NexaBold.woff') format('woff'),
+    url('https://cdn.slasify.com/pub/font/text/nexa/NexaBold.ttf') format('truetype');
+  unicode-range: U+00-FF, U+980-9FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url('../assets/fonts/NexaLight.woff') format('woff'),
+    url('https://cdn.slasify.com/pub/font/text/nexa/NexaLight.ttf') format('truetype');
+  unicode-range: U+00-FF, U+980-9FF;
+  font-display: swap;
+}

@@ -1,0 +1,35 @@
+@import (reference) '@/styles/custom.less';
+
+.antLayoutHeader {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: @screen-sm) {
+    padding: 0 10px !important;
+  }
+}
+
+.containerFluid {
+  max-width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menuContainer {
+      display: flex;
+      align-items: center;
+
+      .select {
+        width: 130px;
+      }
+    }
+  }
+}
